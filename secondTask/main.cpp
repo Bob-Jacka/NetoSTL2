@@ -10,7 +10,6 @@
  * @param separator separator value between values
  */
 template<typename T>
-    requires std::copyable<T>
 void print_container(const T &container, const std::string &separator = " ") {
     const size_t container_size = container.size();
     int i = 0;
